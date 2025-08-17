@@ -14,6 +14,6 @@ c2 = (f2 - 32) * 5 / 9
 c3 = (f3 - 32) * 5 / 9
 
 # Mostrar resultados
-print(f"{f1} ºF = {c1:.2f} ºC")
-print(f"{f2} ºF = {c2:.2f} ºC")
-print(f"{f3} ºF = {c3:.2f} ºC")
+print(f1, "ºF = ",c1, "ºC")
+print(f2, "ºF = ",c2, "ºC")
+print(f3, "ºF = ",c3, "ºC")

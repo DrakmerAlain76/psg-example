@@ -18,4 +18,4 @@ minutos = resto // 60
 segundos = resto % 60
 
 # Mostrar el resultado
-print(f"{total_segundos} segundos = {semanas} semanas {días} días {horas} horas {minutos} minutos {segundos} segundos")
+print(total_segundos, "segundos =",semanas,"semanas", días, "días", horas,"horas", minutos, "minutos",segundos, "segundos")

@@ -6,4 +6,4 @@ lado = 15
 volumen = lado ** 3
 
 # Mostrar el resultado
-print(f"El volumen del cubo es: {volumen} metros cúbicos")
+print("El volumen del cubo es:", volumen, "metros cúbicos")

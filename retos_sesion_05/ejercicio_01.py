@@ -9,4 +9,4 @@ cantidad = 12
 total = precio_unitario * cantidad
 
 # Mostrar el resultado
-print(f"Total a pagar por {cantidad} productos: ${total:.2f}")
+print("Total a pagar por ", cantidad, "productos: $",total)

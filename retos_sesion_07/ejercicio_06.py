@@ -8,12 +8,11 @@ archivo = "reporte_final.pdf"
 print(archivo.endswith(".pdf"))  
 
 mensaje = "Hola mundo"
-nuevo_mensaje = mensaje.replace("mundo", "universo")
-print(nuevo_mensaje)  
+print(mensaje.ljust(20, "-"))
 
 frase = "La luna es hermosa esta noche"
-posicion = frase.find("hermosa")
-print(posicion)  
+print(frase.rjust(40, "."))
 
-titulo = "el señor de los anillos"
-print(titulo.title())  
+numero = "42"
+print(numero.zfill(5))
+print("7".zfill(3))    
