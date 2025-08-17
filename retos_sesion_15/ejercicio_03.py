@@ -16,6 +16,9 @@ print(f"Saldo disponible: {saldo} Bs\n")
 try:
     monto = float(input("Ingrese el monto a retirar: "))
 
+    if monto <= 0:
+        raise ValueError("El monto a retirar debe ser mayor a cero.")
+
     if monto > saldo:
         raise FondosInsuficientesError("Fondos insuficientes para realizar la transacción.")
     
@@ -26,6 +29,8 @@ try:
     print(f"✅ Retiro exitoso. Nuevo saldo: {saldo} Bs")
 
 except FondosInsuficientesError as e:
+    print(f"❌ Error: {e}")
+except ValueError as e:
     print(f"❌ Error: {e}")
 except Exception as e:
     print(f"⚠️ Error: {e}")

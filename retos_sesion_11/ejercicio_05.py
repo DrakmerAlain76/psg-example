@@ -19,9 +19,8 @@ arca.update({"🐰": 2, "🐸": 2, "🐢": 2})
 print("\nArca después de añadir 3 especies:")
 print(arca)
 
-# Tomar lista de los animales en el arca iterando el diccionario
-# Sin usar for, se puede usar list() con keys() o items()
-lista_animales = list(arca.items())
+# Tomar lista de los animales en el arca iterando el diccionario con iter()
+lista_animales = list(iter(arca.items()))
 print("\nLista de animales en el arca (especie y cantidad):")
 print(lista_animales)
 
@@ -30,7 +29,7 @@ existe_dragon = '🐲' in arca
 print("\n¿Existe el dragón 🐲 en el arca?", existe_dragon)
 
 # Eliminar la especie unicornio 🦄 del arca
-del arca['🦄']
+arca.pop('🦄', None)
 print("\nArca después de eliminar el unicornio 🦄:")
 print(arca)
 

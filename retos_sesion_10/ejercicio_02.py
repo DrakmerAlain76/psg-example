@@ -5,9 +5,15 @@
 # ["Short", "Playera", "Sudadera", "Tenis", "Short", "Calcetines"]
 # ["Saco", "Corbata", "Pantalón de vestir", "Zapatos", "Calcetines"]
 
-ropa_deportiva = {"Short", "Playera", "Sudadera", "Tenis", "Short", "Calcetines"}
-ropa_formal = {"Saco", "Corbata", "Pantalón de vestir", "Zapatos", "Calcetines"}
+deportiva = ["Short", "Playera", "Sudadera", "Tenis", "Short", "Calcetines"]
+formal = ["Saco", "Corbata", "Pantalón de vestir", "Zapatos", "Calcetines"]
 
-nueva_tienda = set(ropa_deportiva) | set(ropa_formal)
-nueva_tienda = set(ropa_deportiva).union(ropa_formal)
+# Crear conjuntos a partir de las listas
+ropa_deportiva = set(deportiva)
+ropa_formal = set(formal)
+
+# Unir ambos conjuntos para la nueva tienda
+nueva_tienda = ropa_deportiva.union(ropa_formal)
+
+print("Prendas en la nueva tienda:")
 print(nueva_tienda)

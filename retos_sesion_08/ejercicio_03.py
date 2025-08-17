@@ -6,17 +6,16 @@
 #     Imprime el resultado concatenado
 #     Repite la tupla concatenada 2 veces e imprime el nuevo resultado
 
+# Pedir la pregunta
 texto = input("Ingresa una pregunta (sin signos de interrogación): ")
 
-pregunta = tuple([texto])  # Creamos una tupla con la pregunta
+# Crear la tupla con la pregunta
+pregunta = (texto,)
 
-# Concatenamos con signos de interrogación
+# Concatenar los signos de interrogación usando tuplas
 pregunta_completa = ('¿',) + pregunta + ('?',)
+print("Pregunta concatenada como tupla:", pregunta_completa)
 
-# Unimos todos los elementos en una sola cadena
-cadena_final = ''.join(pregunta_completa)
-print("Pregunta unida:", cadena_final)
-
-# Repetimos la tupla y volvemos a unir
-cadena_repetida = ''.join(pregunta_completa * 2)
-print("Pregunta repetida 2 veces:", cadena_repetida)
+# Repetir la tupla 2 veces
+pregunta_repetida = pregunta_completa * 2
+print("Pregunta repetida 2 veces como tupla:", pregunta_repetida)

@@ -12,4 +12,4 @@ jess_autos = {'Ferrari', 'Lamborghini', 'Tesla', 'Ford', 'Chevrolet'}
 
 autos_en_comun = jhon_autos & jess_autos
 
-print("Autos en común:", autos_en_comun)
+print("Autos en común:", autos_en_comun or "No hay autos en común")
